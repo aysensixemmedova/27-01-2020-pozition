@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.logo {
+    float: left;
+}
+
+header .menu {
+    float: right;
+}
+header .menu li{
+    
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+#services .service-item {
+    width: 33.333%;
+    float: left;
+    position: relative;
+
+}
+
+#services img {
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+#services .services-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rosybrown;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    padding-top: 130px;
+    transition: opacity .5s cubic-bezier(0.1, 0.96, 0.99, 0.07);
+
+}
+
+#services .service-item:hover .services-content {
+    opacity: 0.8;
+    visibility: visible;
+}
